@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bgclr2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/text_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="0sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/home_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:src="@drawable/coba"
+                    android:scaleType="fitXY"
+                    android:baseline="5dp" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:background="@color/profile_circle"
+                    android:layout_below="@+id/home_img" />
+
+                <ImageView
+                    android:id="@+id/home_img_profile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/pani"
+                    android:scaleType="centerInside" />
+                <TextView
+                    android:id="@+id/home_tv_nama"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:text="@string/nama"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="40dp"/>
+                <TextView
+                    android:id="@+id/profile"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:text="@string/Profile2"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/AquaDanon"
+                    android:gravity="center"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_below="@+id/view" />
+
+                <TextView
+                    android:id="@+id/deskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deskripsi"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/profile" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:background="@color/profile_circle"
+                    android:layout_below="@+id/deskripsi" />
+                <TextView
+                    android:id="@+id/INTEREST"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:text="@string/interest2"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/AquaDanon"
+                    android:gravity="center"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_below="@+id/view2" />
+
+                <TextView
+                    android:id="@+id/hobi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hobi"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/INTEREST" />
+                <TextView
+                    android:id="@+id/makes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/makes"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/hobi" />
+                <TextView
+                    android:id="@+id/interest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/interest"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/makes" />
+                <TextView
+                    android:id="@+id/cita"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cita"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/interest" />
+
+        </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
